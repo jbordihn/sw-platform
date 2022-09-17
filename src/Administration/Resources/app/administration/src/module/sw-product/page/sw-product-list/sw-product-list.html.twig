@@ -216,6 +216,30 @@
                 {% endblock %}
 
                 <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                {% block sw_product_list_grid_columns_createdAt %}
+                    <template #column-createdAt="{ item }">
+                        <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                        {% block sw_product_list_grid_columns_createdAt_content %}
+                            <template>
+                                {{ item.createdAt | date }}
+                            </template>
+                        {% endblock %}
+                    </template>
+                {% endblock %}
+
+                <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                {% block sw_product_list_grid_columns_updatedAt %}
+                    <template #column-updatedAt="{ item }">
+                        <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+                        {% block sw_product_list_grid_columns_updatedAt_content %}
+                            <template>
+                                {{ item.updatedAt | date }}
+                            </template>
+                        {% endblock %}
+                    </template>
+                {% endblock %}
+
+                <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
                 {% block sw_product_list_grid_columns_actions %}
                 <template #more-actions="{ item }">
                     <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->

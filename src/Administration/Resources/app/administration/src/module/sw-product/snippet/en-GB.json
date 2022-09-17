@@ -222,6 +222,8 @@
       "columnActive": "Active",
       "columnPrice": "Price",
       "columnInStock": "In stock",
+      "columnCreatedAt": "Created at",
+      "columnUpdatedAt": "Updated at",
       "columnAvailableStock": "Available",
       "columnReleaseDate": "Release date",
       "columnVisibilities": "Sales Channels",
